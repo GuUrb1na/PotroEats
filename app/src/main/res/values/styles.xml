@@ -8,4 +8,9 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="MenuTheme" parent="Theme.AppCompat.Light">
+        <item name="android:background">#ADD8E6</item>
+        <item name="android:text">Menu</item>
+    </style>
+
 </resources>

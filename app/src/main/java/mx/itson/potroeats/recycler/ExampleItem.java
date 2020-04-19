@@ -9,6 +9,8 @@ public class ExampleItem {
         this.mText = text;
     }
 
+
+
     public String getImageResource() {
         return mImageResource;
     }

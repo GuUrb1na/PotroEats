@@ -1,4 +1,5 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#55ADED"
@@ -22,24 +23,25 @@
 
         <EditText
             android:id="@+id/ET_Correo"
-            android:hint="@string/hint_Correo"
-            android:layout_height="wrap_content"
             android:layout_width="350dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:textColorHint="#edebe9"
+            android:hint="@string/hint_Correo"
+            android:text="Richard_1998_09@hotmail.com"
             android:inputType="textEmailAddress"
+            android:textColorHint="#edebe9"
 
-            />
+             />
 
         <EditText
             android:id="@+id/ET_Contraseña"
-            android:hint="@string/hint_Contraseña"
-            android:layout_height="wrap_content"
             android:layout_width="350dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:textColorHint="#edebe9"
+            android:hint="@string/hint_Contraseña"
             android:inputType="textPassword"
-            />
+            android:text="Ricardos18"
+            android:textColorHint="#edebe9" />
 
         <Button
             android:id="@+id/btn_Conectar"

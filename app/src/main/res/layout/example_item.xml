@@ -23,9 +23,9 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_alignParentBottom="true"
-            android:background="#8B0000"
+            android:background="#eccbc1"
             android:gravity="center"
-            android:textColor="#FFFFFF">
+            android:textColor="#0d0604">
 
         </TextView>
 

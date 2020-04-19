@@ -5,7 +5,10 @@ import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
@@ -24,7 +27,7 @@ import mx.itson.potroeats.recycler.ExampleItem;
 public class MenuActivity extends AppCompatActivity {
     //Instanciamos el recycler view que es el menu que proyectaremos
     private RecyclerView mRecyclerView;
-    private RecyclerView.Adapter mAdapter;
+    private ExampleAdapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
     //Instanciamos la base de datos
     DatabaseReference myRef;
@@ -77,5 +80,16 @@ public class MenuActivity extends AppCompatActivity {
         mAdapter = new ExampleAdapter(examplelist);
         mRecyclerView.setLayoutManager(mLayoutManager);
         mRecyclerView.setAdapter(mAdapter);
+
+        mAdapter.setOnItemClickListener(new ExampleAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(int position) {
+                Intent intent = new Intent(MenuActivity.this, CuentaActivity.class);
+                intent.putExtra("indexComida",position+1);
+                startActivity(intent);
+
+
+            }
+        });
     }
 }
