@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#55ADED"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_Volver"
+        android:onClick="irPrincipal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/btn_Volver"
+        android:layout_gravity="center"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/ET_Nombre"
+            android:hint="@string/hint_Nombre"
+            android:layout_height="wrap_content"
+            android:layout_width="350dp"
+            android:layout_gravity="center"
+            android:textColorHint="#edebe9"
+            />
+
+        <EditText
+            android:id="@+id/ET_Correo"
+            android:hint="@string/hint_Correo"
+            android:layout_height="wrap_content"
+            android:layout_width="350dp"
+            android:layout_gravity="center"
+            android:textColorHint="#edebe9"
+            android:inputType="textEmailAddress"
+            />
+
+        <EditText
+            android:id="@+id/ET_Contraseña"
+            android:hint="@string/hint_Contraseña"
+            android:layout_height="wrap_content"
+            android:layout_width="350dp"
+            android:layout_gravity="center"
+            android:textColorHint="#edebe9"
+            android:inputType="textPassword"
+            />
+
+        <Button
+            android:id="@+id/btn_Registrarse"
+            android:onClick="RegistrarUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn_Resgistrarse"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
