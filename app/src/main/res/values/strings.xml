@@ -9,10 +9,11 @@
     <string name="Viewpager">View_Pager</string>
     <string name="btn_ordenar">Ordenar</string>
     <string name="btn_cuenta">Mi cuenta</string>
-    <string name="btn_favoritos">Favoritos</string>
+    <string name="btn_carrito">Carrito</string>
     <string name="TV_bienvenida">¡Bienvenido!</string>
     <string name="TV_menu">Menu</string>
     <string name="TV_itson">Cafeteria Itson Campus Guaymas</string>
     <string name="btn_logout">Cerrar sesion</string>
+
 
 </resources>

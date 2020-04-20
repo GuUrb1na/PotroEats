@@ -7,8 +7,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.AdapterView;
 import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
@@ -21,8 +19,8 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 
-import mx.itson.potroeats.recycler.ExampleAdapter;
-import mx.itson.potroeats.recycler.ExampleItem;
+import mx.itson.potroeats.recyclermenu.ExampleAdapter;
+import mx.itson.potroeats.recyclermenu.ExampleItem;
 
 public class MenuActivity extends AppCompatActivity {
     //Instanciamos el recycler view que es el menu que proyectaremos
@@ -84,7 +82,7 @@ public class MenuActivity extends AppCompatActivity {
         mAdapter.setOnItemClickListener(new ExampleAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(int position) {
-                Intent intent = new Intent(MenuActivity.this, CuentaActivity.class);
+                Intent intent = new Intent(MenuActivity.this, VerComida.class);
                 intent.putExtra("indexComida",position+1);
                 startActivity(intent);
 

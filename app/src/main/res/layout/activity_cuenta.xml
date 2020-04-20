@@ -32,13 +32,13 @@
         android:textSize="15sp" />
 
     <Button
-        android:id="@+id/btn_favoritos"
+        android:id="@+id/btn_carrito"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_gravity="center"
         android:background="#B7AFA3"
-        android:text="@string/btn_favoritos" />
+        android:text="@string/btn_carrito" />
 
     <Button
         android:id="@+id/btn_logout"

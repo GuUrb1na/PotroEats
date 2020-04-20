@@ -4,17 +4,17 @@ public class Comida {
     int ID;
     String Descripcion;
     String Nombre;
-    Double precio;
+    Double Precio;
     String fotoURL;
 
     public Comida() {
     }
 
-    public Comida(int ID, String descripcion, String nombre, Double precio, String fotoURL) {
+    public Comida(int ID, String descripcion, String nombre, Double Precio, String fotoURL) {
         this.ID = ID;
         Descripcion = descripcion;
         Nombre = nombre;
-        this.precio = precio;
+        this.Precio = Precio;
         this.fotoURL = fotoURL;
     }
 
@@ -43,11 +43,11 @@ public class Comida {
     }
 
     public Double getPrecio() {
-        return precio;
+        return Precio;
     }
 
-    public void setPrecio(Double precio) {
-        this.precio = precio;
+    public void setPrecio(Double Precio) {
+        this.Precio = Precio;
     }
 
     public String getFotoURL() {

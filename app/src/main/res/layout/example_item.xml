@@ -13,7 +13,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="186dp"
-            android:id="@+id/imageView"
+            android:id="@+id/IW_comida"
             android:padding="2dp">
 
         </ImageView>

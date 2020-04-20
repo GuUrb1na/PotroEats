@@ -1,4 +1,4 @@
-package mx.itson.potroeats.recycler;
+package mx.itson.potroeats.recyclermenu;
 
 public class ExampleItem {
     private String mImageResource;

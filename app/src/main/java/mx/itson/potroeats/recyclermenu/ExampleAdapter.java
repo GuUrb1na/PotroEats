@@ -1,4 +1,4 @@
-package mx.itson.potroeats.recycler;
+package mx.itson.potroeats.recyclermenu;
 
 
 
@@ -15,7 +15,6 @@ import com.squareup.picasso.Picasso;
 import java.util.ArrayList;
 
 import mx.itson.potroeats.R;
-import mx.itson.potroeats.Usuario;
 
 
 public class ExampleAdapter extends RecyclerView.Adapter<ExampleAdapter.ExampleViewHolder> {
@@ -38,7 +37,7 @@ public class ExampleAdapter extends RecyclerView.Adapter<ExampleAdapter.ExampleV
 
         public ExampleViewHolder(View itemView, final OnItemClickListener listener) {
             super(itemView);
-            mImageView = itemView.findViewById(R.id.imageView);
+            mImageView = itemView.findViewById(R.id.IW_comida);
             mTextView1 = itemView.findViewById(R.id.textView);
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override

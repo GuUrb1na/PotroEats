@@ -12,10 +12,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".VerComida"></activity>
+        <activity android:name=".CarritoActivity"></activity>
+        <activity android:name=".VerComida" />
         <activity
             android:name=".MenuActivity"
-            android:theme="@style/MenuTheme"></activity>
+            android:theme="@style/MenuTheme" />
         <activity android:name=".CuentaActivity" />
         <activity android:name=".Welcomeactivity" />
         <activity android:name=".Registro" />
