@@ -58,16 +58,22 @@ public class Welcomeactivity extends AppCompatActivity {
 
 
     }
+    public void irMenu(View view) {
+        Intent intent = new Intent(this, MenuActivity.class);
+        startActivity(intent);
+    }
 
     public void irCuenta(View view) {
         Intent intent = new Intent(this, CuentaActivity.class);
         startActivity(intent);
     }
 
-    public void irMenu(View view) {
-        Intent intent = new Intent(this, MenuActivity.class);
+    public void irCarrito(View view) {
+        Intent intent = new Intent(this, CarritoActivity.class);
         startActivity(intent);
     }
+
+
 
     @Override
     public void onBackPressed() {

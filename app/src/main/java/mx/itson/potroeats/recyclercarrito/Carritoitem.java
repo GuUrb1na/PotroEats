@@ -9,6 +9,7 @@ public class Carritoitem {
         mImageResource = imageResource;
         mText1 = text1;
         mText2 = text2;
+
     }
 
     public String getImageResource() {

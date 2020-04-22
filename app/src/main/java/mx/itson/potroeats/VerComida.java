@@ -38,7 +38,7 @@ public class VerComida extends AppCompatActivity {
     DatabaseReference reference;
     DatabaseReference reference2;
     Comida comida = new Comida();
-    List<Comida> Ordenlist = new ArrayList<>();
+    ArrayList<Comida> Ordenlist = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,7 +69,6 @@ public class VerComida extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         ordenar();
-                        Log.d("jajaja", "" + Ordenlist.get(1).getNombre());
                         irCarrito(v);
 
                     }
@@ -94,6 +93,7 @@ public class VerComida extends AppCompatActivity {
 
     public  void irCarrito(View view){
         Intent intent = new Intent(this, CarritoActivity.class);
+        intent.putParcelableArrayListExtra("Orden", Ordenlist);
         startActivity(intent);
     }
 }

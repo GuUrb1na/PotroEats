@@ -33,6 +33,7 @@
             android:text="@string/btn_ordenar" />
         <Button
             android:id="@+id/btn_carrito"
+            android:onClick="irCarrito"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

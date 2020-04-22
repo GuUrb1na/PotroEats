@@ -21,6 +21,7 @@ public class Carritoadapter extends RecyclerView.Adapter<Carritoadapter.CarritoV
         public ImageView mImageView;
         public TextView mTextView1;
         public TextView mTextView2;
+        public TextView mTextView3;
 
         public CarritoViewHolder(View itemView) {
             super(itemView);
