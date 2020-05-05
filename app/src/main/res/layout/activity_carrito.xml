@@ -34,23 +34,24 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:layout_width="144dp"
-                    android:layout_height="63dp"
-                    android:text="Total:"
+                    android:id="@+id/TV_total"
+                    android:layout_width="match_parent"
+                    android:layout_height="61dp"
                     android:textSize="35sp" />
 
                 <Button
+                    android:id="@+id/btn_Comprar"
                     android:layout_width="125dp"
                     android:layout_height="70dp"
-                    android:background="#D8ADE6"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
                     android:layout_marginEnd="12dp"
                     android:layout_marginBottom="3dp"
+                    android:background="#D8ADE6"
                     android:text="Comprar" />
 
                 <Button
-
+                    android:id="@+id/btn_borrarorden"
                     android:layout_width="125dp"
                     android:layout_height="70dp"
                     android:background="#D8ADE6"

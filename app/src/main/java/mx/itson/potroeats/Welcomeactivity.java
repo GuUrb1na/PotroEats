@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -20,6 +21,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import org.w3c.dom.Text;
 
+import java.util.ArrayList;
 import java.util.EventListener;
 
 public class Welcomeactivity extends AppCompatActivity {
@@ -38,6 +40,7 @@ public class Welcomeactivity extends AppCompatActivity {
 
     TextView txtUser;
     Button btncUser;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,8 +59,8 @@ public class Welcomeactivity extends AppCompatActivity {
         ActualizarUI();
 
 
-
     }
+
     public void irMenu(View view) {
         Intent intent = new Intent(this, MenuActivity.class);
         startActivity(intent);
@@ -69,19 +72,22 @@ public class Welcomeactivity extends AppCompatActivity {
     }
 
     public void irCarrito(View view) {
+        ArrayList<Comida> comidas = getIntent().getParcelableArrayListExtra("Orden");
         Intent intent = new Intent(this, CarritoActivity.class);
+        intent.putParcelableArrayListExtra("Orden", comidas);
         startActivity(intent);
-    }
 
+
+    }
 
 
     @Override
     public void onBackPressed() {
-          //vacio para que nada pase
+        //vacio para que nada pase
     }
 
     //Cambia los string de acuerdo a el usuario que acab de ingresar
-    public void ActualizarUI(){
+    public void ActualizarUI() {
         //Recuperacion de la id de usuario
         reference = FirebaseDatabase.getInstance().getReference().child("Usuario").child(user.getUid());
         //Metodo para acceder a los datos del usuario

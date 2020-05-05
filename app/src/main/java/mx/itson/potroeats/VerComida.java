@@ -38,7 +38,7 @@ public class VerComida extends AppCompatActivity {
     DatabaseReference reference;
     DatabaseReference reference2;
     Comida comida = new Comida();
-    ArrayList<Comida> Ordenlist = new ArrayList<>();
+    static ArrayList<Comida> Ordenlist = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -13,4 +13,9 @@
         <item name="android:text">Menu</item>
     </style>
 
+    <style name="TarjetaTheme" parent="Theme.AppCompat.Light">
+        <item name="android:background">#ADD8E6</item>
+        <item name="android:text">Tarjeta</item>
+    </style>
+
 </resources>
